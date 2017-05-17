@@ -1,0 +1,25 @@
+﻿body {
+}
+
+#frontPage {
+    color:#00ff90;
+    background-image: url('Korean Mountains 2.png');
+    margin-top: 0px;
+    background-size:cover;
+}
+.photoLinks {
+    margin:auto;
+    height:auto;
+}
+#tableviews {
+    color: #000000;
+    font-weight: bold;
+    background-color: #dcc32e;
+}
+.indexHeader {
+    font-weight:bold;
+    font-size:larger;
+}
+.aboutit {
+    background-color:#b6ff00;
+}

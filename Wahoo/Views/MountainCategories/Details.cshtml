@@ -1,0 +1,43 @@
+﻿@model Wahoo.Models.MountainCategory
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>MountainCategory</h4>
+    <hr />
+    <dl class="dl-horizontal">
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TrailName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TrailName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TrailLocation)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TrailLocation)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Elevation)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Elevation)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.CategoryID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

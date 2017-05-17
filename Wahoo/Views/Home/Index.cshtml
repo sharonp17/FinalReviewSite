@@ -1,0 +1,62 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron" id="frontPage">
+    <h1>Mountain Trek Adventures</h1>
+    <p class="lead">Check out some great hiking adventures in South Korea</p>
+   @Html.ActionLink("Learn More", "Index", "MountainCategories", null, new { @class = "btn btn-primary btn-lg" })
+</div>
+<div class="row container" id="frontPage">
+    <div class="col-lg-12">
+        <p>
+            <img src="~/Content/Images/Korean Mountains 2.png" alt="cover image" height="500" width="1100" />
+        </p>
+    </div>
+</div>
+<div class="row container photoLinks">   
+        <div class="col-sm-12 col-md-4">
+            <div class="thumbnail">
+                <img src="~/Content/Images/Hallasan.png" alt="hallasan crater " />
+                <h2>Mount Hallasan</h2>
+                @Html.ActionLink("Learn More", "Index", "MountainCategories", null, new { @class = "btn btn-default" })
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-4">
+            <div class="thumbnail">
+                <img src="~/Content/Images/Songnisan.jpg" alt="Fall foliage " />
+                <h2>Mount Songnisan</h2>
+                @Html.ActionLink("Learn More", "Index", "MountainCategories" ,null, new {@class ="btn btn-default"})
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-4">
+            <div class="thumbnail">
+                <img src="~/Content/Images/korean mountains.png" alt="Mountain in the clouds " />
+                <h2>Mount Seoraksan</h2>               
+                @Html.ActionLink("Learn More", "Index", "MountainCategories", null, new { @class = "btn btn-default" })
+            </div>
+        </div>
+    </div>
+<div class="row container photoLinks">
+    <div class="col-sm-12 col-md-4">
+        <div class="thumbnail">
+            <img src="~/Content/Images/jirisan.png"  alt="hallasan crater " />
+            <h2>Mount Jirisan</h2>
+            @Html.ActionLink("Learn More", "Index", "MountainCategories", null, new { @class = "btn btn-default" })
+        </div>
+    </div>
+    <div class="col-sm-12 col-md-4">
+        <div class="thumbnail">
+            <img src="~/Content/Images/Bukhansan.png"  alt="Fall foliage " />
+            <h2>Mount Bukhansan</h2>
+            @Html.ActionLink("Learn More", "Index", "MountainCategories", null, new { @class = "btn btn-default" })
+        </div>
+    </div>
+    <div class="col-sm-12 col-md-4">
+        <div class="thumbnail">
+            <img src="~/Content/Images/Fall mountains.png"  alt="Mountain in the clouds " />
+            <h2>Explore More Mountains</h2>
+            <p><a class="btn btn-default" href="https://www.10mag.com/19-breathtaking-hikes-into-the-korean-mountains/">Learn more &raquo;</a></p>
+        </div>
+    </div>
+</div>

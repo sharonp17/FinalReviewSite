@@ -1,0 +1,57 @@
+﻿@model Wahoo.Models.Review
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Review</h4>
+    <hr />
+    <dl class="dl-horizontal" id="frontPage">
+        <dt>
+            @Html.DisplayNameFor(model => model.ReviewerName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ReviewerName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ReviewDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ReviewDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Comments)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Comments)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Rating)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Rating)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Mountain)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Mountain)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ReviewId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
